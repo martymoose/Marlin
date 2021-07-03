@@ -544,7 +544,8 @@
 #define HEATER_5_MAXTEMP 275
 #define HEATER_6_MAXTEMP 275
 #define HEATER_7_MAXTEMP 275
-#define CHAMBER_MAXTEMP  60
+#define BED_MAXTEMP 110  
+#define CHAMBER_MAXTEMP  35
 // PID Tuning Guide here: https://reprap.org/wiki/PID_Tuning
 
 // Comment the following line to disable PID and enable bang-bang.
@@ -1863,16 +1864,6 @@
 // Preheat Constants - Up to 5 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
-<<<<<<< HEAD
-#define PREHEAT_1_TEMP_HOTEND 215
-#define PREHEAT_1_TEMP_BED     60
-#define PREHEAT_1_FAN_SPEED     0 // ANET A6 Default is 255
-
-#define PREHEAT_2_LABEL       "ABS"
-#define PREHEAT_2_TEMP_HOTEND 255
-#define PREHEAT_2_TEMP_BED    100
-#define PREHEAT_2_FAN_SPEED     0 // ANET A6 Default is 255
-=======
 #define PREHEAT_1_TEMP_HOTEND 180
 #define PREHEAT_1_TEMP_BED     70
 #define PREHEAT_1_TEMP_CHAMBER 35
@@ -1883,7 +1874,6 @@
 #define PREHEAT_2_TEMP_BED    110
 #define PREHEAT_2_TEMP_CHAMBER 35
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
->>>>>>> cd01421ac32041c7f775ec37dd8d00b29a5d335b
 
 /**
  * Nozzle Park
