@@ -1291,19 +1291,11 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-<<<<<<< HEAD
 //#define INVERT_Y_DIR true
 //#define INVERT_Z_DIR false
 //ANET A6:
 #define INVERT_Y_DIR false
 #define INVERT_Z_DIR true
-=======
-#define INVERT_Y_DIR true
-#define INVERT_Z_DIR false
-//#define INVERT_I_DIR false
-//#define INVERT_J_DIR false
-//#define INVERT_K_DIR false
->>>>>>> cd01421ac32041c7f775ec37dd8d00b29a5d335b
 
 // @section extruder
 

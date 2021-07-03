@@ -141,7 +141,7 @@
   #error "DEFAULT_XYJERK is deprecated. Use DEFAULT_XJERK and DEFAULT_YJERK instead."
 #elif defined(XY_TRAVEL_SPEED)
   #error "XY_TRAVEL_SPEED is now XY_PROBE_FEEDRATE."
-#elif defined(XY_PROBE_SPEED)
+#elif defined(XY_PROBE_FEEDRATE)
   #error "XY_PROBE_SPEED is now XY_PROBE_FEEDRATE."
 #elif defined(Z_PROBE_SPEED_FAST)
   #error "Z_PROBE_SPEED_FAST is now Z_PROBE_FEEDRATE_FAST."
