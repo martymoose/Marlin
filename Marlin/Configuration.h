@@ -888,16 +888,12 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-<<<<<<< HEAD
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 500 }
 
 // ANET A6 Firmwae V2.0 defaults: (steps/mm)
 // Xsteps/mm: +100.0, Ysteps/mm: +100.0, Zsteps/mm: +0400.0, eSteps/mm: +0095.0
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 100,  100, 400, 95 }
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80,  80, 400, 95 }
-=======
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 500 }
->>>>>>> cd01421ac32041c7f775ec37dd8d00b29a5d335b
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1185,49 +1181,14 @@
 #define PROBING_MARGIN 10
 
 // X and Y axis travel speed (mm/min) between probes
-<<<<<<< HEAD
 #define XY_PROBE_SPEED (133*60)
 //#define XY_PROBE_SPEED (100*60)
-=======
-#define XY_PROBE_FEEDRATE (133*60)
->>>>>>> cd01421ac32041c7f775ec37dd8d00b29a5d335b
 
 // Feedrate (mm/min) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_FEEDRATE_FAST (4*60)
 
 // Feedrate (mm/min) for the "accurate" probe of each point
-<<<<<<< HEAD
 #define Z_PROBE_SPEED_SLOW (Z_PROBE_SPEED_FAST / 3)
-=======
-#define Z_PROBE_FEEDRATE_SLOW (Z_PROBE_FEEDRATE_FAST / 2)
-
-/**
- * Probe Activation Switch
- * A switch indicating proper deployment, or an optical
- * switch triggered when the carriage is near the bed.
- */
-//#define PROBE_ACTIVATION_SWITCH
-#if ENABLED(PROBE_ACTIVATION_SWITCH)
-  #define PROBE_ACTIVATION_SWITCH_STATE LOW // State indicating probe is active
-  //#define PROBE_ACTIVATION_SWITCH_PIN PC6 // Override default pin
-#endif
-
-/**
- * Tare Probe (determine zero-point) prior to each probe.
- * Useful for a strain gauge or piezo sensor that needs to factor out
- * elements such as cables pulling on the carriage.
- */
-//#define PROBE_TARE
-#if ENABLED(PROBE_TARE)
-  #define PROBE_TARE_TIME  200    // (ms) Time to hold tare pin
-  #define PROBE_TARE_DELAY 200    // (ms) Delay after tare before
-  #define PROBE_TARE_STATE HIGH   // State to write pin for tare
-  //#define PROBE_TARE_PIN PA5    // Override default pin
-  #if ENABLED(PROBE_ACTIVATION_SWITCH)
-    //#define PROBE_TARE_ONLY_WHILE_INACTIVE  // Fail to tare/probe if PROBE_ACTIVATION_SWITCH is active
-  #endif
-#endif
->>>>>>> cd01421ac32041c7f775ec37dd8d00b29a5d335b
 
 /**
  * Multiple Probing
